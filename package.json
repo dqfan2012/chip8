@@ -1,0 +1,15 @@
+{
+  "name": "chip8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Samuel Stidham",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}
