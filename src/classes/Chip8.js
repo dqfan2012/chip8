@@ -33,22 +33,22 @@ class Chip8 {
         this.memory = new Uint8Array(mem);
 
         // The Chip-8 has 16 general purpose registers. The last is used for "carry flag"
-        this.V = new Array(16);
+        this.V = new Array(0x10);
         // The Chip-8 has an index register
-        this.I = null;
+        this.I = 0x0;
         // The Chip-8 has a program counter (pc) that starts at memory location 0x200
         this.PC = 0x200;
 
         // The system has 16 levels of stack. The stack is used to remember the current location of the program counter before
         // jumping to another location or executing a subroutine. The stack pointer (sp) keeps track of which level of stack is being
         // used
-        this.stack = new Array(16);
-        this.sp = null;
+        this.stack = new Array(0x10);
+        this.sp = 0x0;
 
         // Chip-8 has two timers. They both count down at 60 hertz until they reach 0. The delay timer is used for timing events of games.
         // It's value can be set and read. The sound timer is used for sound effects. When it's value is nonzero, a beeping sound is made.
-        this.delayTimer = null;        
-        this.soundTimer = null;
+        this.delayTimer = 0x0;        
+        this.soundTimer = 0x0;
 
         this.keys = {};
     }
