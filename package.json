@@ -2,15 +2,31 @@
   "name": "chip8",
   "version": "1.0.0",
   "description": "A CHIP-8 emulator. Written mostly for the educational value",
-  "main": "",
+  "main": "./src/index.js",
   "scripts": {
+    "build": "",
+    "copy": "node scripts/copy.js",
+    "start": "webpack-dev-server --content-base public/",
     "test": "./node_modules/.bin/jest"
   },
   "keywords": [],
   "author": "Samuel Stidham",
   "license": "GPL-3.0",
   "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "chalk": "^2.1.0",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "image-webpack-loader": "^3.3.1",
     "jest": "^20.0.4",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "shelljs": "^0.7.8",
+    "shx": "^0.2.2",
+    "source-map-loader": "^0.2.1",
+    "style-loader": "^0.18.2",
     "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1"
   }
