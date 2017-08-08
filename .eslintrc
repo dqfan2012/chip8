@@ -7,6 +7,8 @@
         "jest": true
     },
     "rules": {
-        "strict": ["error", "global"]
+        "strict": ["error", "global"],
+        "no-console": "off",
+        "no-debugger": "off"
     }
 }

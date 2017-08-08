@@ -4,5 +4,8 @@ module.exports = {
     "testPathIgnorePatterns": [
         '/node_modules/',
         '/dist/'
-    ]
+    ],
+    "transform": {
+        ".*": "./node_modules/babel-jest"
+    }
 };
