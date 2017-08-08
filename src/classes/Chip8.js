@@ -29,7 +29,7 @@ class Chip8 {
 
         // Configure the Memory - The length (or size) of an ArrayBuffer is measured in bytes. Chip-8 uses up to 4K bytes of memory.
         // Convert the 4K bytes into an unsigned 8-bit integer array
-        const mem = new ArrayBuffer(4096);
+        const mem = new ArrayBuffer(0x1000);
         this.memory = new Uint8Array(mem);
 
         // The Chip-8 has 16 general purpose registers. The last is used for "carry flag"
