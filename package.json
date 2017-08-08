@@ -1,15 +1,17 @@
 {
   "name": "chip8",
   "version": "1.0.0",
-  "description": "",
+  "description": "A CHIP-8 emulator. Written mostly for the educational value",
   "main": "",
   "scripts": {
-    "test": "jest"
+    "test": "./node_modules/.bin/jest"
   },
   "keywords": [],
   "author": "Samuel Stidham",
   "license": "GPL-3.0",
   "devDependencies": {
-    "jest": "^20.0.4"
+    "jest": "^20.0.4",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
   }
 }
