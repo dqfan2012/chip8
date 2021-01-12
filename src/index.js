@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-import Chip8 from '../dist/bundle';
+import Chip8 from './classes/Chip8';
 
 const myChip8 = new Chip8();
 

@@ -1,26 +1,31 @@
-"use strict";
+'use strict';
 
-const { resolve } = require("path");
+const path = require('path');
 
 module.exports = {
-    resolve: {
-        extensions: [".js"]
-    },
-    entry: "./index.js",
-    output: {
-        filename: "./bundle.js",
-        path: resolve(__dirname, "dist")
-    },
+  mode: 'development',
+  context: path.resolve(__dirname, "src"),
+  entry: '/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
 
-    context: resolve(__dirname, "src"),
-    devtool: "source-map",
+  
+  devtool: 'source-map',
 
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                use: ["babel-loader"]
-            }
-        ]
-    },
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
+    ]
+  },
 };
