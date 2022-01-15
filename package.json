@@ -28,7 +28,7 @@
     "jest-cli": "^26.6.3",
     "postcss-loader": "^4.1.0",
     "sass-loader": "^10.1.1",
-    "shelljs": "^0.8.4",
+    "shelljs": "^0.8.5",
     "shx": "^0.3.3",
     "source-map-loader": "^2.0.0",
     "style-loader": "^2.0.0",
