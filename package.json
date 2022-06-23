@@ -26,6 +26,7 @@
     "image-webpack-loader": "^8.1.0",
     "jest": "^28.1.1",
     "jest-cli": "^28.1.1",
+    "postcss": "^8.4.14",
     "postcss-loader": "^7.0.0",
     "sass-loader": "^13.0.0",
     "shelljs": "^0.8.5",
